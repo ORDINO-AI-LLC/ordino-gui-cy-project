@@ -1,0 +1,13 @@
+{
+  "_comment": "Test user credentials. Admin can be overridden by .env.",
+  "users": {
+    "admin": {
+      "username": "Admin",
+      "password": "admin123"
+    },
+    "invalid": {
+      "username": "invalid_user",
+      "password": "wrong_password"
+    }
+  }
+}

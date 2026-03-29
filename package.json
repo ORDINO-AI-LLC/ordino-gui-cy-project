@@ -1,0 +1,26 @@
+{
+  "name": "ordino-gui-cy-project",
+  "version": "1.0.0",
+  "description": "Ordino Cypress UI Test Automation",
+  "main": "index.js",
+  "scripts": {
+    "ui:headed": "cypress run --browser chrome --headed",
+    "ui:headless": "cypress run --browser chrome --headless",
+    "ui:open": "cypress open",
+    "clean": "node -e \"const fs=require('fs'); fs.rmSync('test-results',{recursive:true,force:true}); console.log('cleaned');\"",
+    "audit": "tsc --noEmit"
+  },
+  "author": "ordino-ai",
+  "license": "ISC",
+  "dependencies": {
+    "@cypress/webpack-preprocessor": "^6.0.2",
+    "@types/node": "^24.6.0",
+    "cypress": "^15.13.0",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-plugin-steps": "latest",
+    "dotenv": "^17.3.1",
+    "ts-loader": "^9.5.0",
+    "typescript": "^5.9.3",
+    "webpack": "^5.97.0"
+  }
+}

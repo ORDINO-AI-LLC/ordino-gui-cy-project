@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "types": ["cypress", "node"],
+    "ignoreDeprecations": "6.0",
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*": ["src/gui/pages/*"],
+      "@panels/*": ["src/gui/panels/*"],
+      "@config/*": ["src/config/*"],
+      "@gui/*": ["src/gui/*"],
+      "@src/*": ["src/*"],
+      "@data/*": ["src/config/data/*"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "features/**/*",
+    "cypress/**/*",
+    "cypress.config.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
