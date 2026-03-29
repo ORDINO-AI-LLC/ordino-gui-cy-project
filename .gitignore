@@ -9,13 +9,11 @@ build/
 out/
 *.tsbuildinfo
 
-# ── Cypress — artifacts & reporter output (this project uses test-results/) ─
+# ── Cypress — artifacts & reporter (project uses test-results/) ───────────
 /test-results/
-# Default Cypress paths (if config ever uses them)
 cypress/downloads/
 cypress/screenshots/
 cypress/videos/
-# Mochawesome / mochawesome-merge temps
 .mochawesome-report/
 
 # ── Secrets (never commit) ───────────────────────────────────────────────────
@@ -44,16 +42,23 @@ coverage
 
 # ── Bundlers / Webpack ───────────────────────────────────────────────────────
 .cache/
+.parcel-cache/
 .temp/
 .webpack/
 
 # ── Framework build caches (future-proof) ─────────────────────────────────────
 .next/
 .nuxt/
-.parcel-cache/
 .svelte-kit/
 .serverless/
 .vite/
+.vuepress/dist/
+**/.vitepress/dist
+**/.vitepress/cache
+.docusaurus
+.fusebox/
+.dynamodb/
+.firebase/
 
 # ── Package manager ───────────────────────────────────────────────────────────
 .npm/
