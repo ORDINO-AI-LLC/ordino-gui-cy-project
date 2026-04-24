@@ -187,9 +187,9 @@ export default defineConfig({
           } catch { /* skip malformed */ }
         }
 
-        // Write consolidated JSON into reports dir
+        // Write consolidated JSON at test-results root (sibling of reports/)
         fs.writeFileSync(
-          path.resolve(__dirname, 'test-results/reports/results.json'),
+          path.resolve(__dirname, 'test-results/results.json'),
           JSON.stringify({
             generatedAt: new Date().toISOString(),
             totalSpecs:  merged.length,
